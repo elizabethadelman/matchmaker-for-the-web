@@ -4,11 +4,12 @@
     Author: Elizabeth Adelman
     Project: MatchMakerForTheWeb
 
-    All rights reserved.
+    All rights reserved. Thank you Dr.Pogue for the demos.
 -->
 
 <head>
     <meta charset="UTF-8">
+    <script src="Java.js"></script>
     <title>Match Maker For The Web</title>
 </head>
 
@@ -19,7 +20,8 @@
     <!-- Reference for HTML "option" tabs/fields: https://www.w3schools.com/tags/tag_option.asp-->
     <label for="Fast Food">Best fast food resturaunt on earth is Chick-fil-a:</label>
     <br></br>
-<select id="Fast Food">
+
+<select id="q1">
   <option value="5">Strongly Agree</option>
   <option value="4">Agree</option>
   <option value="3">Neutral</option>
@@ -28,9 +30,9 @@
 </select>
 <br></br>
 
-<label for="Season">All time favorite season is Fall:</label>
+<label for="season">All time favorite season is Fall:</label>
 <br></br>
-<select id="Season">
+<select id="q2">
   <option value="5">Strongly Agree</option>
   <option value="4">Agree</option>
   <option value="3">Neutral</option>
@@ -39,9 +41,9 @@
 </select>
 <br></br>
 
-<label for="Animal"> Frogs are suppirior over any other animal on earth:</label>
+<label for="animal"> Frogs are suppirior over any other animal on earth:</label>
 <br></br>
-<select id="Animal">
+<select id="q3">
   <option value="5">Strongly Agree</option>
   <option value="4">Agree</option>
   <option value="3">Neutral</option>
@@ -50,9 +52,9 @@
 </select>
 <br></br>
 
-<label for="Color">PINK is an amazing color:</label>
+<label for="color">PINK is an amazing color:</label>
 <br></br>
-<select id="Color">
+<select id="q4">
   <option value="5">Strongly Agree</option>
   <option value="4">Agree</option>
   <option value="3">Neutral</option>
@@ -61,9 +63,9 @@
 </select>
 <br></br>
 
-<label for="Grade">Elizabeth Adelman deserves an A in this course:</label>
+<label for="grade">Metallica would be the coolest to see live:</label>
 <br></br>
-<select id="Grade">
+<select id="q5">
   <option value="5">Strongly Agree</option>
   <option value="4">Agree</option>
   <option value="3">Neutral</option>
@@ -71,10 +73,18 @@
   <option value="1">Strongly Disagree</option>
 </select>
 <br></br>
+<button onclick="calculateCompatibility()">Calculate Compatibility</button>
 
-<script>
-console.log("Starting Match Maker For The Web")
+<p id="q1r"></p>
+<p id="q2r"></p>
+<p id="q3r"></p>
+<p id="q4r"></p>
+<p id="q5r"></p>
 
-</script>
+<p id="Compatibility"></p>  
+
+<p id="Perfect Match"></p>
+
+ 
 </body>
 </html>
